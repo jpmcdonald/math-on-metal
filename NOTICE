@@ -1,0 +1,144 @@
+# NOTICE
+
+math-on-metal
+Copyright 2026 Patrick McDonald / Perceptive Strategies LLC
+
+This repository is licensed under a dual license:
+- Documentation and prose: Creative Commons Attribution-ShareAlike 4.0 International (LICENSE-DOCS)
+- Code examples: Apache License 2.0 (LICENSE)
+
+---
+
+## Third-Party Acknowledgments
+
+This repository contains no code copied from third-party sources. All code examples
+are original work written to demonstrate usage of publicly documented APIs. The
+following acknowledgments are provided for frameworks and work referenced or cited.
+
+---
+
+### Errol Brandt / Kiraa AI
+
+Benchmark results cited in this repository (Python vs Swift + Metal GPU, ~91x speedup
+on 10M ERP transaction z-score scoring) are from Errol Brandt's publicly available
+benchmark repo:
+
+  https://github.com/drerrolb/Apple-Silicon-Analytics-TestBench
+
+That repository carries no license at time of writing. The benchmark results referenced
+here are factual performance measurements, not reproduced code. Attribution is provided
+as a courtesy and in recognition of Errol's work advancing Swift-native data science
+tooling on Apple Silicon.
+
+Errol Brandt: https://www.linkedin.com/in/errolbrandt/
+Kiraa AI: https://www.kiraa.ai
+
+---
+
+### Apple MLX
+
+MLX is an array framework for Apple Silicon developed by Apple machine learning research.
+
+  https://github.com/ml-explore/mlx
+  License: MIT (Copyright © 2023 Apple Inc.)
+
+Code examples in this repository demonstrate usage of the MLX public API. No MLX
+source code has been reproduced.
+
+---
+
+### PyTorch
+
+PyTorch is an open source machine learning framework.
+
+  https://github.com/pytorch/pytorch
+  License: BSD-3-Clause (Copyright © Facebook, Inc. and its affiliates)
+
+Code examples demonstrate usage of the PyTorch public API including the MPS backend
+for Apple Silicon. No PyTorch source code has been reproduced.
+
+---
+
+### NumPyro and JAX
+
+NumPyro is a probabilistic programming library built on JAX.
+
+  https://github.com/pyro-ppl/numpyro
+  License: Apache 2.0 (Copyright © 2019 Uber Technologies)
+
+JAX is a composable transformations library for Python and NumPy.
+
+  https://github.com/google/jax
+  License: Apache 2.0 (Copyright © 2018 Google LLC)
+
+Code examples demonstrate usage of the NumPyro and JAX public APIs. No source code
+has been reproduced.
+
+---
+
+### PyMC
+
+PyMC is a probabilistic programming library for Bayesian statistical modeling.
+
+  https://github.com/pymc-devs/pymc
+  License: Apache 2.0
+
+Code examples demonstrate usage of the PyMC public API. No PyMC source code has
+been reproduced.
+
+---
+
+### ArviZ
+
+ArviZ is a library for exploratory analysis of Bayesian models.
+
+  https://github.com/arviz-devs/arviz
+  License: Apache 2.0
+
+---
+
+### Apple Accelerate Framework, Metal, and CoreML
+
+The Accelerate framework, Metal, and CoreML are Apple proprietary frameworks
+with publicly documented APIs.
+
+  https://developer.apple.com/documentation/accelerate
+  https://developer.apple.com/documentation/metal
+  https://developer.apple.com/documentation/coreml
+
+Code examples demonstrate usage of these publicly documented APIs. No Apple
+proprietary source code has been reproduced. Apple, Apple Silicon, Metal, CoreML,
+Accelerate, and related names are trademarks of Apple Inc.
+
+---
+
+### FAISS
+
+FAISS is a library for efficient similarity search developed by Meta Research.
+
+  https://github.com/facebookresearch/faiss
+  License: MIT (Copyright © Meta Platforms, Inc. and affiliates)
+
+---
+
+## Trademark Notice
+
+Apple, Apple Silicon, M1, M2, M3, M4, Mac, MacBook, Mac Studio, Metal, CoreML,
+Neural Engine, Accelerate, Swift, Xcode, and iPad are trademarks of Apple Inc.,
+registered in the U.S. and other countries.
+
+CUDA and NVIDIA are trademarks of NVIDIA Corporation.
+
+Python is a trademark of the Python Software Foundation.
+
+All other trademarks are the property of their respective owners. Use of these
+names in this repository is for identification and reference purposes only and
+does not imply endorsement by the trademark holders.
+
+---
+
+## No Client Data
+
+No client data, proprietary model structures, or confidential information from
+any consulting engagement has been incorporated in this repository. All code
+examples use synthetic or generic data structures.
