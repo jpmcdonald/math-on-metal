@@ -2,7 +2,7 @@
 
 **Purpose:** Paste this document into your LLM session before asking it to write Swift data science code targeting Apple Silicon. Swift is a compiled language with direct access to Metal, the Accelerate framework, and the Neural Engine — offering qualitatively different performance ceilings than Python for the right workloads.
 
-**Extends:** [`SKILL.md`](SKILL.md) — read that first.
+**Extends:** [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) — read that first.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Purpose:** Paste this document into your LLM session before asking it to write MLX code for Apple Silicon. MLX is Apple's own array framework — designed from scratch for unified memory — and LLMs have thinner training data on it than PyTorch. This skill corrects common mistakes and establishes correct idioms.
 
-**Extends:** [`SKILL.md`](SKILL.md) — read that first.
+**Extends:** [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) — read that first.
 
 ---
 
@@ -247,7 +247,7 @@ Requires macOS 13.5+ and Apple Silicon (M1 or later).
 
 ## Further Reading
 
-- [`SKILL.md`](SKILL.md) — General Apple Silicon rules
+- [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) — General Apple Silicon rules
 - [`bayesian-skill.md`](bayesian-skill.md) — Bayesian modeling (uses JAX, not MLX)
 - MLX documentation: [https://ml-explore.github.io/mlx/](https://ml-explore.github.io/mlx/)
 - MLX examples: [https://github.com/ml-explore/mlx-examples](https://github.com/ml-explore/mlx-examples)

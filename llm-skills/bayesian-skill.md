@@ -2,7 +2,7 @@
 
 **Purpose:** Paste this document into your LLM session before asking it to write Bayesian or probabilistic models for Apple Silicon (M-series Macs). It corrects the most common failure modes: cardinality explosions, silent CPU fallbacks, and framework choices that ignore unified memory structure.
 
-**Extends:** [`SKILL.md`](SKILL.md) — read that first for general Apple Silicon rules. This document adds Bayesian-specific patterns.
+**Extends:** [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) — read that first for general Apple Silicon rules. This document adds Bayesian-specific patterns.
 
 ---
 
@@ -449,7 +449,7 @@ if any(e < 0.3 for e in energy):
 
 ## Further Reading
 
-- [`SKILL.md`](SKILL.md) — General Apple Silicon rules (read first)
+- [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) — General Apple Silicon rules (read first)
 - [`../../foundations/unified-memory/cpu-vs-gpu-paths.md`](../../foundations/unified-memory/cpu-vs-gpu-paths.md) — When CPU is the right answer
 - [`mlx-skill.md`](mlx-skill.md) — MLX patterns for Apple Silicon
 - NumPyro documentation: [https://num.pyro.ai](https://num.pyro.ai)

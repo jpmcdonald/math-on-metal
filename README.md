@@ -30,40 +30,49 @@ This repo documents what that means in practice:
 
 ## Repository Structure
 
+Layout below matches the repository as it exists today. Directories without prose or examples yet contain a `.gitkeep` placeholder so Git tracks the folder. Following usual GitHub practice for a single-purpose docs repo, subdirectory READMEs are not duplicated here—the tree below is the canonical map.
+
 ```
 math-on-metal/
 │
 ├── README.md                    ← You are here
 ├── CONTRIBUTING.md
+├── LICENSE                      # Apache 2.0 — code examples
+├── LICENSE-DOCS                 # CC-BY-SA 4.0 — documentation / prose
+├── NOTICE                       # Third-party acknowledgments
 │
 ├── foundations/
 │   ├── unified-memory/          # Architecture primer, why it matters
-│   ├── accelerate-framework/    # BLAS, LAPACK, vDSP patterns
-│   └── memory-management/       # Cardinality, allocation strategies
+│   │   └── cpu-vs-gpu-paths.md
+│   ├── accelerate-framework/    # BLAS, LAPACK, vDSP patterns (stub)
+│   └── memory-management/       # Cardinality, allocation strategies (stub)
 │
 ├── languages/
-│   ├── python/                  # NumPy, JAX, MLX idioms
-│   ├── swift/                   # Swift + Accelerate patterns
-│   ├── c-cpp/                   # Low-level Metal interop
-│   └── msl/                     # Metal Shading Language examples
+│   ├── python/                  # NumPy, JAX, MLX idioms (stub)
+│   ├── swift/                   # Swift + Accelerate patterns (stub)
+│   ├── c-cpp/                   # Low-level Metal interop (stub)
+│   └── msl/                     # Metal Shading Language examples (stub)
 │
 ├── domains/
-│   ├── bayesian/                # Hierarchical models, MCMC, sparse handling
-│   ├── optimization/            # Constraint solving on Apple Silicon
-│   ├── time-series/
-│   └── embeddings/              # FAISS, vector retrieval
+│   ├── bayesian/                # Hierarchical models, MCMC, sparse handling (stub)
+│   ├── optimization/            # Constraint solving on Apple Silicon (stub)
+│   ├── time-series/             # Forecasting, temporal models (stub)
+│   └── embeddings/              # FAISS, vector retrieval (stub)
 │
 ├── llm-skills/                  # Prompt engineering for Apple Silicon code generation
-│   ├── SKILL.md                 # Master skill document (start here)
-│   ├── accelerate-skill.md
+│   ├── apple-silicon-data-science-skill.md   # Base skill — start here (paste into LLM context)
+│   ├── accelerate-skill.md      # Accelerate / BLAS / LAPACK / vDSP prompts
 │   ├── mlx-skill.md
 │   ├── bayesian-skill.md
-│   └── msl-skill.md
+│   ├── msl-skill.md
+│   └── swift-skill.md           # Swift + Metal / Accelerate patterns
 │
-└── benchmarks/                  # Reproducible performance comparisons
+└── benchmarks/
     ├── methodology.md
-    └── results/
+    └── results/                 # Benchmark outputs (stub)
 ```
+
+**Populated today:** `foundations/unified-memory/cpu-vs-gpu-paths.md`, `benchmarks/methodology.md`, and the files under `llm-skills/`. **Stubs:** empty directories (and `benchmarks/results/`) hold `.gitkeep` until guides, examples, or benchmark artifacts are added.
 
 ---
 
@@ -79,7 +88,7 @@ Python has a fundamental constraint: the Global Interpreter Lock (GIL) means Pyt
 
 [Errol Brandt](https://www.linkedin.com/in/errolbrandt/) is actively building Swift-native data science libraries that prove this out in practice — including an Apple-native port of Pandas backed by low-level C libraries linked with Metal GPU acceleration. His benchmarks show Swift + Metal running more than 80x faster than equivalent Python for certain data-intensive workflows. The library ecosystem is still being built, but the results are worth paying attention to.
 
-This repo documents what exists, what patterns work, and how to prompt LLMs to generate correct Swift + Metal code. See [`llm-skills/swift-skill.md`](llm-skills/swift-skill.md) and [`llm-skills/msl-skill.md`](llm-skills/msl-skill.md).
+This repo documents what exists, what patterns work, and how to prompt LLMs to generate correct Swift + Metal code. See [`llm-skills/accelerate-skill.md`](llm-skills/accelerate-skill.md), [`llm-skills/swift-skill.md`](llm-skills/swift-skill.md), and [`llm-skills/msl-skill.md`](llm-skills/msl-skill.md).
 
 ---
 
@@ -87,7 +96,7 @@ This repo documents what exists, what patterns work, and how to prompt LLMs to g
 
 **New to Apple Silicon for data science?** Start with [`foundations/unified-memory/`](foundations/unified-memory/) — it explains why the architecture matters and which workloads benefit.
 
-**Using LLMs to write your code?** Start with [`llm-skills/SKILL.md`](llm-skills/SKILL.md) — it's a prompt document you can paste directly into Claude, ChatGPT, or any capable model to get Apple Silicon-aware code generation.
+**Using LLMs to write your code?** Start with [`llm-skills/apple-silicon-data-science-skill.md`](llm-skills/apple-silicon-data-science-skill.md) — it's a prompt document you can paste directly into Claude, ChatGPT, or any capable model to get Apple Silicon-aware code generation.
 
 **Working on a specific domain?** Jump to [`domains/`](domains/) for patterns relevant to your problem type.
 

@@ -248,5 +248,5 @@ If you can't check all of these, start in CPU regime and migrate specific bottle
 
 - [`../accelerate-framework/`](../accelerate-framework/) — CPU-path Accelerate patterns (BLAS, LAPACK, vDSP)
 - [`../../languages/python/`](../../languages/python/) — MLX and PyTorch MPS idioms
-- [`../../llm-skills/SKILL.md`](../../llm-skills/SKILL.md) — Prompting LLMs to generate architecture-aware code
+- [`../../llm-skills/apple-silicon-data-science-skill.md`](../../llm-skills/apple-silicon-data-science-skill.md) — Prompting LLMs to generate architecture-aware code
 - [`../../llm-skills/bayesian-skill.md`](../../llm-skills/bayesian-skill.md) — Bayesian model patterns for Apple Silicon

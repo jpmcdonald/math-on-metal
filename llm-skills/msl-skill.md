@@ -2,7 +2,7 @@
 
 **Purpose:** Paste this document into your LLM session before asking it to write Metal Shading Language (MSL) compute kernels. MSL has thin LLM training data — most models will insert CUDA idioms that are syntactically wrong in MSL. This skill provides correct patterns.
 
-**Extends:** [`SKILL.md`](SKILL.md) and [`swift-skill.md`](swift-skill.md).
+**Extends:** [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) and [`swift-skill.md`](swift-skill.md).
 
 ---
 
@@ -298,7 +298,7 @@ fn(n, input_data, output_data)
 ## Further Reading
 
 - [`swift-skill.md`](swift-skill.md) — Swift dispatch patterns for Metal kernels
-- [`SKILL.md`](SKILL.md) — General Apple Silicon rules
+- [`apple-silicon-data-science-skill.md`](apple-silicon-data-science-skill.md) — General Apple Silicon rules
 - Apple Metal documentation: [https://developer.apple.com/documentation/metal](https://developer.apple.com/documentation/metal)
 - Metal Shading Language specification: [https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
 - metalcompute (Python): [https://github.com/baldand/py-metal-compute](https://github.com/baldand/py-metal-compute)
